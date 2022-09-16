@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
     {{ super() }}
+    <p><a href="{{ url_for('admin.index') }}">Админ-панель</a></p>
     <hr>
     <h1>Посещений: {{ visit }}</h1>
     <h2>Список статей</h2>
